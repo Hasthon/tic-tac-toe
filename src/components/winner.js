@@ -14,7 +14,8 @@ export function WinninLogic(squares) {
             return {
                 winner: squares[a],
                 line: lines[i],
-                isDraw:false
+                isDraw:false,
+                gameOver:true,
 
             }
         }
@@ -29,5 +30,6 @@ export function WinninLogic(squares) {
         winner:null,
         line:null,
         isDraw:isDraw,
+        gameOver:false,
     }
 }
